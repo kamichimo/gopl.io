@@ -10,8 +10,9 @@ func main() {
 	fmt.Printf(boilingPoint)
 }
 
-func getBoilingPoint() string {
+func getBoilingPoint() (ret string) {
 	var f = boilingF
 	var c = (f - 32) * 5 / 9
-	return fmt.Sprintf("boiling point = %gF or %gC\n", f, c)
+	ret = fmt.Sprintf("boiling point = %gF or %gC\n", f, c)
+	return
 }

@@ -8,8 +8,8 @@ import (
 
 func TestGetBoilingPoint(t *testing.T) {
 	t.Run("水の沸騰点を表示すること", func(t *testing.T) {
-		expect := "boiling point = 212F or 100C"
-		actual := getBoilingPoint
+		expect := "boiling point = 212F or 100C\n"
+		actual := getBoilingPoint()
 		assert.Equal(t, expect, actual)
 	})
 }
